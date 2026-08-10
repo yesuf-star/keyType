@@ -7,11 +7,11 @@
 </head>
 <body>
  <input id="textBox" type="text" placeholder="Press any key on your keyboard..." />
-<div id="display"></div>
+<div id="pressed-key-output"></div>
 
 <script>
     const textBox=document.getElementById('textBox');
-    const output=document.getElementById('display');
+    const output=document.getElementById('pressed-key-output');
     
 textBox.addEventListener("keydown", (event)=>{
     output.textContent=`You pressed : ${event.key}`;
