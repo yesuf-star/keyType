@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kdisplay the pressed key type</title>
+</head>
+<body>
+    <input id="textBox" type="text" placeholder="type here..." />
+<div id="output"></div>
+
+<script>
+    const textBox=document.getElementById('textBox');
+    const output=document.getElementById('output');
+    
+textBox.addEventListener("keydown", (event)=>{
+    output.textContent=`You pressed : ${event.key}`;
+
+});
+
+// textBox.addEventListener("keydown", function (event) {
+//    output.textContent=`You pressed "${event.key}".`;
+//   console.log(`You pressed "${event.key}".`);
+// });
+
+//    textBox.addEventListener("keydown", (event) => {
+//     output.textContent=`You pressed "${event.key}".`;
+//   });
+
+// If the function only takes one argument, you can omit the
+// parentheses around it:
+// textBox.addEventListener("keydown", event => {
+//     output.textContent=`You pressed "${event.key}".`;
+// });
+
+</script>
+</body>
+</html>
